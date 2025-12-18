@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>データ入力練習サイト - 正確に・速く・ミスなく</title>
+    <meta name="description" content="データ入力の基礎から実務レベルまで、自動採点機能で楽しく学べる練習サイト。事務職・在宅ワークを目指す方に最適。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-background"></div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">DataMaster</span>
+                    </div>
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link active">ホーム</a></li>
+                        <li><a href="#about" class="nav-link">データ入力とは</a></li>
+                        <li><a href="#tips" class="nav-link">入力のコツ</a></li>
+                        <li><a href="#practice" class="nav-link">練習問題</a></li>
+                        <li><a href="#results" class="nav-link">マイ結果</a></li>
+                    </ul>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">正確に・速く・ミスなく</span>
+                        <br>データ入力をマスターしよう
+                    </h1>
+                    <p class="hero-subtitle">
+                        実務で使える入力スキルを、自動採点とリアルタイムフィードバックで効率的に習得。
+                        <br>事務職・在宅ワークを目指すあなたをサポートします。
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#practice" class="btn btn-primary">
+                            <span>今すぐ練習を始める</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>データ入力について学ぶ</span>
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">1,000+</div>
+                            <div class="stat-label">練習問題</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">満足度</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">いつでも学習</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">データ入力とは？</h2>
+                <p class="section-subtitle">実務で求められるスキルを理解しよう</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">📝</div>
+                    <h3>データ入力の仕事</h3>
+                    <p>紙やPDFの情報をパソコンに入力する仕事。在宅ワークとしても人気が高く、初心者でも始めやすい職種です。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">🎯</div>
+                    <h3>求められるスキル</h3>
+                    <p>正確性、スピード、集中力が重要。全角半角の使い分けや、数字・日付の正しい入力が求められます。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">💼</div>
+                    <h3>よくある仕事例</h3>
+                    <p>名簿入力、アンケート集計、住所録作成、売上データ入力、請求書処理など、様々な業務があります。</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">⚠️</div>
+                    <h3>注意すべきポイント</h3>
+                    <p>全角半角の違い、日付フォーマット、数字の桁区切り、誤字脱字など、細かい部分に注意が必要です。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section tips-section" id="tips">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">入力のコツ</h2>
+                <p class="section-subtitle">プロが実践する効率的な入力テクニック</p>
+            </div>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <div class="tip-number">01</div>
+                    <h3>全角・半角を意識する</h3>
+                    <p>数字は半角、カタカナは全角など、ルールを守ることが重要です。IMEの設定を活用しましょう。</p>
+                    <div class="tip-example">
+                        <span class="correct">✓ 正: 090-1234-5678</span>
+                        <span class="incorrect">✗ 誤: 090-1234-5678</span>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">02</div>
+                    <h3>ショートカットキーを活用</h3>
+                    <p>Ctrl+C（コピー）、Ctrl+V（貼り付け）、Tab（次の項目へ）など、キーボード操作で効率アップ。</p>
+                    <div class="tip-example">
+                        <span class="correct">✓ Tab キーで次の入力欄へ移動</span>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">03</div>
+                    <h3>入力後は必ず確認</h3>
+                    <p>一度入力したら、必ず見直しを。特に数字や固有名詞は間違いやすいポイントです。</p>
+                    <div class="tip-example">
+                        <span class="correct">✓ 入力 → 確認 → 送信の習慣化</span>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-number">04</div>
+                    <h3>集中できる環境を作る</h3>
+                    <p>静かな場所、適切な照明、定期的な休憩で集中力を維持。長時間作業は避けましょう。</p>
+                    <div class="tip-example">
+                        <span class="correct">✓ 50分作業 + 10分休憩</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Practice Section -->
+    <section class="section practice-section" id="practice">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">練習問題</h2>
+                <p class="section-subtitle">レベル別に用意された豊富な練習問題</p>
+            </div>
+            
+            <div class="difficulty-tabs">
+                <button class="tab-btn active" data-level="beginner">初級</button>
+                <button class="tab-btn" data-level="intermediate">中級</button>
+                <button class="tab-btn" data-level="advanced">実務形式</button>
+            </div>
+
+            <div class="exercises-grid" id="exercisesGrid">
+                <!-- Exercises will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Modal -->
+    <div class="modal" id="exerciseModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="exercise-container" id="exerciseContainer">
+                <!-- Exercise content will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <section class="section results-section" id="results">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">マイ結果</h2>
+                <p class="section-subtitle">あなたの成長を可視化</p>
+            </div>
+            <div class="results-dashboard" id="resultsDashboard">
+                <div class="results-empty">
+                    <div class="empty-icon">📊</div>
+                    <h3>まだ練習記録がありません</h3>
+                    <p>練習問題を解いて、あなたの成長を記録しましょう！</p>
+                    <a href="#practice" class="btn btn-primary">練習を始める</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">DataMaster</span>
+                    </div>
+                    <p>データ入力スキルを磨いて、キャリアアップを実現しよう</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>学習</h4>
+                        <ul>
+                            <li><a href="#about">データ入力とは</a></li>
+                            <li><a href="#tips">入力のコツ</a></li>
+                            <li><a href="#practice">練習問題</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>サポート</h4>
+                        <ul>
+                            <li><a href="#faq">よくある質問</a></li>
+                            <li><a href="#contact">お問い合わせ</a></li>
+                            <li><a href="#guide">使い方ガイド</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DataMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
